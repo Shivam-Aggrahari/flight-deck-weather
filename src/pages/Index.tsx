@@ -5,7 +5,10 @@ import RouteSearch from "@/components/RouteSearch";
 import RouteTable from "@/components/RouteTable";
 import { getWeatherData, getRouteWeather } from "@/data/mockWeatherData";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
+import { FileText } from "lucide-react";
 
 interface WeatherData {
   airport: string;
@@ -75,6 +78,18 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-accent/20">
       <div className="container mx-auto px-4 py-8 space-y-8">
+        {/* Header with Navigation */}
+        <section className="text-center space-y-4">
+          <div className="flex justify-center">
+            <Link to="/metar-interpreter">
+              <Button variant="outline" className="mb-4">
+                <FileText className="h-4 w-4 mr-2" />
+                METAR Interpreter
+              </Button>
+            </Link>
+          </div>
+        </section>
+
         {/* Airport Search Section */}
         <section className="text-center">
           <AirportSearch onSearch={handleAirportSearch} loading={loading} />
