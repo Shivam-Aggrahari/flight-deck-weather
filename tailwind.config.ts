@@ -22,6 +22,15 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
+        },
+        weather: {
+          clear: "hsl(var(--weather-clear))",
+          "clear-bg": "hsl(var(--weather-clear-bg))",
+          significant: "hsl(var(--weather-significant))",
+          "significant-bg": "hsl(var(--weather-significant-bg))",
+          severe: "hsl(var(--weather-severe))",
+          "severe-bg": "hsl(var(--weather-severe-bg))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",

@@ -8,33 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Aviation-themed color palette */
+    --background: 210 20% 98%;
+    --foreground: 210 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Aviation blue primary */
+    --primary: 210 80% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 80% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 30% 92%;
+    --secondary-foreground: 210 15% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 25% 95%;
+    --muted-foreground: 210 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 50% 88%;
+    --accent-foreground: 210 15% 20%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Weather condition colors */
+    --weather-clear: 142 70% 45%;
+    --weather-clear-bg: 142 70% 95%;
+    --weather-significant: 45 90% 55%;
+    --weather-significant-bg: 45 90% 95%;
+    --weather-severe: 0 75% 55%;
+    --weather-severe-bg: 0 75% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 25% 90%;
+    --input: 210 25% 90%;
+    --ring: 210 80% 45%;
+
+    /* Aviation gradients */
+    --gradient-aviation: linear-gradient(135deg, hsl(var(--primary)), hsl(210 90% 55%));
+    --gradient-sky: linear-gradient(180deg, hsl(210 80% 98%), hsl(210 60% 95%));
+    
+    /* Shadows */
+    --shadow-aviation: 0 4px 12px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 2px 8px hsl(210 15% 20% / 0.08);
 
     --radius: 0.5rem;
 
